@@ -13,3 +13,10 @@
 - States: untracked (new) → modified (changed) → staged (in the box) → committed (saved).
 - `git log --oneline` = history; `git remote -v` = where pushes go. Git ignores empty folders.
 - .gitignore = files Git must never save (e.g. .venv). Never push secrets or venvs.
+
+## W1 L2: Terminal navigation
+- `Get-Location` (pwd) = where am I; `ls` = what's here; `cd <folder>` = go in; `cd ..` = up one level
+- Absolute path = full address (G:\...), works from anywhere. Relative = from where I stand (02_sql, ..\02_sql)
+- Tab = autocomplete names (no typos); Up arrow = previous commands; Esc = clear line
+- "Cannot find path ... does not exist" → check Get-Location, then ls
+- In code: relative paths resolve from the working directory, not the script → use Path(__file__).parent

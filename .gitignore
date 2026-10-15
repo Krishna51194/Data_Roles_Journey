@@ -1,0 +1,12 @@
+# Python cache files (created automatically when code runs)
+__pycache__/
+*.pyc
+
+# Secrets: passwords and API keys live here. Never push them.
+.env
+
+# Jupyter notebook autosaves
+.ipynb_checkpoints/
+
+# Windows system files
+Thumbs.db
