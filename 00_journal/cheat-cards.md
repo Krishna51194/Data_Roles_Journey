@@ -20,3 +20,10 @@
 - Tab = autocomplete names (no typos); Up arrow = previous commands; Esc = clear line
 - "Cannot find path ... does not exist" → check Get-Location, then ls
 - In code: relative paths resolve from the working directory, not the script → use Path(__file__).parent
+
+## W2 L1: Values and types
+- Types: int (45), float (129.99), str ("Delta"), bool (True/False), None (missing). Check with type(x).
+- Convert explicitly: int("120"), float("180.50"), str(45). Python won't mix text and numbers for you.
+- "120" + "5" = "1205" (joins text!) · 10 / 2 = 5.0 (always float) · 10 // 4 = 2 · True + True = 2
+- TypeError = wrong type for the operation ("120" + 5). ValueError = right type, bad content (int("Delta")).
+- Debugger: click left of a line number = breakpoint → F5 start → F10 step → watch the Variables panel. Yellow line = runs NEXT.
