@@ -27,3 +27,11 @@
 - "120" + "5" = "1205" (joins text!) · 10 / 2 = 5.0 (always float) · 10 // 4 = 2 · True + True = 2
 - TypeError = wrong type for the operation ("120" + 5). ValueError = right type, bad content (int("Delta")).
 - Debugger: click left of a line number = breakpoint → F5 start → F10 step → watch the Variables panel. Yellow line = runs NEXT.
+
+## W2 L2: Strings
+- Index from 0; negative from the end: code[0] = "D", code[-1] = "7". Slice [start:stop], stop NOT included.
+- Shortcuts: code[:2] = first 2 · code[2:] = from 2 to end · date[-2:] = last 2. Slicing is forgiving; indexing out of range = IndexError.
+- Cleaning: .strip() .upper() .lower() .title() (.capitalize() = first letter only) .replace("$", "") .split(",") len(x)
+- Strings are IMMUTABLE: methods return a new copy → always save it: name = name.strip()
+- split = separator-based (CSV, routes; removes the separator) · slice = position-based (codes, dates)
+- f"Flight {code} costs ${price}" · Text compares char by char: "999" > "1287" → convert to int before sorting/maths
