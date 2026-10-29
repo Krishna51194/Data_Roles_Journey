@@ -35,4 +35,10 @@ print(f"[{messy}]")
 
 
 print(code[2:50])
-print(code[10])
+## print(code[10])
+
+delays = [45, 5, 120]
+delays.append(30)
+result = delays.append(60)
+print(result)
+print(delays)

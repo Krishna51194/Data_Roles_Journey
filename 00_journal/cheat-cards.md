@@ -35,3 +35,11 @@
 - Strings are IMMUTABLE: methods return a new copy → always save it: name = name.strip()
 - split = separator-based (CSV, routes; removes the separator) · slice = position-based (codes, dates)
 - f"Flight {code} costs ${price}" · Text compares char by char: "999" > "1287" → convert to int before sorting/maths
+
+## W2 L3: Lists
+- List = ordered, MUTABLE collection: delays = [45, 5, 120]. Index/slice exactly like strings ([0], [-1], [1:3], [1:-1]).
+- Change in place (return None, so DON'T assign): .append(x) .remove(x) .sort() .sort(reverse=True). .pop() removes the last item and returns it.
+- New copy (DO assign): sorted(lst), sorted(lst, reverse=True). Top 3 biggest: sorted(lst, reverse=True)[:3]
+- Ask the list: len() sum() max() min(), round(x, 1), `x in lst` → True/False
+- Strings immutable → must assign (s = s.strip()). Lists mutable → must NOT assign (lst.sort()). "'NoneType' has no ..." → you stored a None.
+- Text numbers sort wrong ('1287' < '45' < '999'). Convert to int/float before sorting or maths. Check output vs expected, line by line.
