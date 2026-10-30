@@ -43,3 +43,11 @@
 - Ask the list: len() sum() max() min(), round(x, 1), `x in lst` → True/False
 - Strings immutable → must assign (s = s.strip()). Lists mutable → must NOT assign (lst.sort()). "'NoneType' has no ..." → you stored a None.
 - Text numbers sort wrong ('1287' < '45' < '999'). Convert to int/float before sorting or maths. Check output vs expected, line by line.
+
+## W2 L4: Dictionaries
+- Dict = key → value pairs: flight = {"airline": "DL", "delay": 45}. Look up by key, not position. Keys unique and case-sensitive.
+- d["key"] crashes on a missing key (KeyError) → use when missing = real error. d.get("key", default) never crashes → use when missing is normal.
+- Add or update with the same syntax: d["gate"] = "B12". `"key" in d` checks KEYS only (not values). len(d), d.keys(), d.values().
+- List of dicts = rows of a table (API/JSON shape); dict of lists = columns. flights[1]["airline"] = row 1, column airline.
+- IndexError = missing position (lists/strings); KeyError = missing key (dicts). Chained lookups fail left to right.
+- Defaults are for display/use, not storage: never write 'Unknown' into the data, it disguises missing values.
