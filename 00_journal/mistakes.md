@@ -7,3 +7,5 @@
 | 2026-10-13 | SyntaxError: invalid syntax | Used `:` instead of `;` between two commands in `python -c` | Use `;` to separate commands on one line |
 | 2026-10-13 | ModuleNotFoundError: No module named 'rich' | Package was never installed in the active environment | `pip install rich` inside the activated venv |
 | 2026-10-13 | fatal: unrecognized argument --online | Typo in option name | git log --oneline |
+| 2026-10-29 | Quiz: thought int("12.5") gives 12 | int() on TEXT only accepts whole-number text; int(12.5) on a NUMBER truncates | Use float("12.5") for decimal text |
+| 2026-10-29 | Quiz: thought text sorts numerically | Text compares character by character ("10" < "100" < "9") | Convert to int/float before sorting |

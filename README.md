@@ -19,4 +19,4 @@ Python · SQL · Git · VS Code · PowerShell, with pandas, Power BI, dbt, Snowf
 
 ## Progress
 - [x] Week 1: Dev environment, virtual environments, terminal, Git and GitHub
-- [ ] Week 2: Python fundamentals
+- [x] Week 2: Python fundamentals
